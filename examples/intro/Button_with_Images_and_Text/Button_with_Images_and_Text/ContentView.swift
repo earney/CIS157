@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        /*
+        
          
         //basic example
         Button(action: {
@@ -20,7 +20,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .foregroundColor(.red)
         }
-        */
+        
         
         /*
         // now lets look at adding some background color
@@ -36,7 +36,7 @@ struct ContentView: View {
         }
         */
         
-        
+        /*
         //lets add the text Delete next to the trash can
         Button(action: {
             print("Delete tapped")
@@ -54,7 +54,7 @@ struct ContentView: View {
             .foregroundColor(.white)
             .cornerRadius(40)
         }
-        
+        */
         
         
         

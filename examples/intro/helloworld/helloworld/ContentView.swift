@@ -12,14 +12,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        /*
+        
         Text("Hello, World!")            // displays "Hello World"
             .padding()                      // 1. add padding
             .background(Color.green)      // 2. Change background color to green
             .foregroundColor(Color.white) // 3. change forground color (text color) to white
             .font(.title)              // 4. change the font type to .title (bigger text)
             .border(Color.yellow, width:5) // adds yellow border
-    */
+    
         
         /*
         Text("Hello World")
@@ -37,17 +37,6 @@ struct ContentView: View {
             )
      */
         
-        
-       // lets create a trash can by using a system image provided by xcode
-        
-        Button(action: {
-              print("Delete button tapped")
-        }) {
-            Image(systemName: "trash")
-                .font(.largeTitle)
-                .foregroundColor(.red)
-        }
-    
     }
 }
     

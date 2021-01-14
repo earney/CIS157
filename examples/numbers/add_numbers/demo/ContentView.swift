@@ -14,12 +14,8 @@ struct ContentView: View {
     @State var total: Int=0
     
     var body: some View {
-       // NavigationView {
             VStack{
-                //HStack {
-                    HStack {
-                        Text("Please enter in two numbers")
-                    }
+                    Text("Please enter in two numbers")
                     HStack {
                         Text("Number 1:")
                         TextField("", text: $a)
@@ -30,12 +26,12 @@ struct ContentView: View {
                     }
                     HStack {
                         Button(action: {self.total=execute(x:self.a,y:self.b)}) {
-                            Text("out:\(total)")
+                            Text("Calculate")
                         }
                     }
-                //} // HStack
+                
+                    Text("Result: \(total)")
             } // VSTack
-       // }  //NavigationView
     }
 }
 

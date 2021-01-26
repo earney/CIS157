@@ -9,19 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isActive = false
+    @State var isActive = false  //should we show the main screen or the splash screen?
     
     var body: some View {
         VStack {
-            if self.isActive {
+            if self.isActive {  //show main screen
                 Text("This is where our main program goes..")
-            } else {
+            } else { //show splash screen
                 Text("My Awesome Splash Screen!")
                     .font(Font.largeTitle)
                     .foregroundColor(.red)
             }
         }// VStack
-        .onAppear {
+        .onAppear {  // when program starts up, set isActive set to true after 2.5 seconds
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                     withAnimation {
                         self.isActive=true

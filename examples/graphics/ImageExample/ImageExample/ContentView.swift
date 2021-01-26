@@ -9,6 +9,8 @@
 import SwiftUI
 
 // this example shows how to display a simple image.
+// example taken from:
+//https://www.simpleswiftguide.com/how-to-add-image-to-xcode-project-in-swiftui/
 
 
 struct ContentView: View {

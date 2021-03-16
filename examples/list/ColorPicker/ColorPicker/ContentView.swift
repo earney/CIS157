@@ -5,12 +5,11 @@
 //  Created by Billy Earney on 1/14/21.
 //  Copyright © 2021 Billy Earney. All rights reserved.
 //
-
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection = 0
-    let colors = ["Red", "Yellow", "Green", "Blue"]
+    @State private var selection = 0;
+    let colors = [Color.black, Color.blue, Color.gray, Color.green, Color.orange, Color.pink, Color.purple, Color.red, Color.white, Color.yellow] //, Color.init("brown", red:0.0, green:0.0, blue:0.0)]
     
     var body: some View {
         VStack {
@@ -25,9 +24,13 @@ struct ContentView: View {
                     //set value in the picker widget
                     //.tag sets a value to associate with
                     // the text
-                    Text(self.colors[i])//.tag(i)
+                    if self.colors[i] == .white {
+                        Text(self.colors[i].description).foregroundColor(.black)
+                    } else {
+                      Text(self.colors[i].description).foregroundColor(self.colors[i])
+                    }
                 }
-        }
+               } //label
         } //vstack
     }
 }
